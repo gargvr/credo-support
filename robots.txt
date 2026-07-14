@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gargvr.github.io/credo-support/sitemap.xml
+Sitemap: https://gargvr.github.io/credo/sitemap.xml
