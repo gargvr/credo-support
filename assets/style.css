@@ -148,8 +148,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .btn-gold { background: var(--gold); color: var(--ink); width: 100%; }
 .btn-gold:hover { background: #b8931f; color: var(--ink); }
 
-.appstore-badge { height: 54px; width: auto; }
+.appstore-badge {
+  height: 88px; width: auto; display: inline-block;
+  transition: transform .12s ease;
+}
+.appstore-badge:hover { transform: scale(1.03); }
+.appstore-badge:active { transform: scale(0.98); }
 .appstore-badge svg { display: block; height: 100%; width: auto; }
+
+@media (max-width: 480px) {
+  .appstore-badge { height: 76px; }
+}
 
 /* ---------- Sections / type ---------- */
 section { position: relative; }
