@@ -10,7 +10,7 @@
   --ink-raised: #3A322B;
   --ink-soft: #4A4038;
   --text-sub: #6E635A;
-  --text-faint: #9A8E80;
+  --text-faint: #7A6D57; /* darkened from #9A8E80: original failed WCAG AA (2.9:1 on paper) */
   --text-disabled: #C4B49C;
 
   --line: #E9E1D6;
@@ -222,9 +222,8 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.7px; }
 .floating-chip .dot svg { width: 15px; height: 15px; }
 .floating-chip p { margin: 0; font-size: 12.5px; font-weight: 600; color: var(--ink-soft); line-height: 1.35; }
 .chip-voice { left: -6%; bottom: 6%; }
-.chip-stat { right: -8%; top: 10%; }
-.chip-stat .num { font-size: 18px; font-weight: 800; color: var(--ink); }
-.chip-stat .label { font-size: 10px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.5px; }
+.chip-stat { right: -8%; top: 10%; max-width: 210px; }
+.chip-stat .dot.dot-green { background: var(--green); }
 
 @media (max-width: 960px) {
   .hero { grid-template-columns: 1fr; }
